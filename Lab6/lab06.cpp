@@ -13,7 +13,8 @@ int main()
 {
 	
 
-	DoTask1();
+	//DoTask1();
+	DoTask2();
 	system("pause");
 
     return 0;

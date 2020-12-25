@@ -22,6 +22,7 @@ void DoTask1()
 {
 	std::vector<int> thisVector = { 2,5,8,7,9,6,4,3 };
 
+	
 	int el;
 
 	cout << "Task1.....\n";
@@ -33,7 +34,7 @@ void DoTask1()
 	cout << "Finding element...\n";
 	vector<int>::iterator iterator = Find(thisVector.begin(), thisVector.end(), el);
 	if (iterator != thisVector.end())
-		cout << "Found element: " << *iterator << "\n";
+		cout << "Found element: " << *iterator << endl;
 	else
 		cout << "There is no such element\n";
 }
