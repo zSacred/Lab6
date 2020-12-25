@@ -1,4 +1,11 @@
 #pragma once
+#include "stdafx.h"
+#include <iostream>
 #include <vector>
 
-std::vector<int>::iterator Find(std::vector<int>::iterator first, std::vector<int>::iterator last, int el);
+using namespace std;
+void DoTask1();
+void printVector(const std::vector<int>& m);
+
+
+vector<int>::iterator Find(vector<int>::iterator first, vector<int>::iterator last, int el);
