@@ -14,7 +14,8 @@ int main()
 	
 
 	//DoTask1();
-	DoTask2();
+	//DoTask2();
+	DoTask3();
 	system("pause");
 
     return 0;
