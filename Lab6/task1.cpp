@@ -1,26 +1,20 @@
 #include "stdafx.h"
 #include "lab.h"
 
+
+
 vector<int>::iterator Find(vector<int>::iterator first, vector<int>::iterator last, int el)
 {
-	vector<int>::iterator it = first;
-
 	
-	int thisEl = 0;
-
-	while (it != last)
+	while (first != last)
 	{
-		thisEl = *it;
-		if (thisEl == el)
-		{
-			return it;
-		}
+		if (*first == el)
+			return first;
 		
-		++it;
+		++first;
 	}
-	--it;
-	
-	return it;
+		
+	return last;
 }
 
 
@@ -38,6 +32,8 @@ void DoTask1()
 
 	cout << "Finding element...\n";
 	vector<int>::iterator iterator = Find(thisVector.begin(), thisVector.end(), el);
-
-	cout << "Found element: " << *iterator << "\n";
+	if (iterator != thisVector.end())
+		cout << "Found element: " << *iterator << "\n";
+	else
+		cout << "There is no such element\n";
 }
