@@ -20,7 +20,8 @@ int main()
 	//DoTask5();
 	//DoTask6();
 	//DoTask7();
-	DoTask8();
+	//DoTask8();
+	DoTask9();
 
 	system("pause");
 

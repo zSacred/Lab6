@@ -16,6 +16,7 @@ void DoTask5();
 void DoTask6();
 void DoTask7();
 void DoTask8();
+void DoTask9();
 
 void PrintVector(const vector<int>& m);
 void PrintVector(const vector<string>& m);
@@ -40,3 +41,6 @@ void ReverseNums(list<int>& nums);
 //Task8
 void PlusesDelete(vector<int>& nums);
 bool IsPlus(const int& element);
+//Task9
+void Sort(const list<int>& nums);
+//bool ToLower(const int& l, const int& r);
