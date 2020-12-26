@@ -5,6 +5,7 @@
 #include <string>
 #include <map>
 #include <set>
+#include <list>
 
 using namespace std;
 void DoTask1();
@@ -13,9 +14,11 @@ void DoTask3();
 void DoTask4();
 void DoTask5();
 void DoTask6();
+void DoTask7();
 
-void printVector(const vector<int>& m);
-void printVector(const vector<string>& m);
+void PrintVector(const vector<int>& m);
+void PrintVector(const vector<string>& m);
+void PrintList(const list<int> &m);
 
 //Task1
 vector<int>::iterator Find(vector<int>::iterator first, vector<int>::iterator last, int el);
@@ -31,3 +34,5 @@ void PrintMap(map<string, int> wordMap);
 vector<string> UniqueWords(const string& str);
 //Task6
 int UniqueWordsCount(const string& str);
+//Task7
+void ReverseNums(list<int>& nums);

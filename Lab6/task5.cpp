@@ -54,6 +54,6 @@ void DoTask5()
 	vector<string> wordsList = UniqueWords(str);
 	cout << "Unique words vector: " << endl;
 
-	printVector(wordsList);
+	PrintVector(wordsList);
 	return;
 }

@@ -27,7 +27,7 @@ void DoTask1()
 
 	cout << "Task1.....\n";
 	cout << "Have vector: \n";
-	printVector(thisVector);
+	PrintVector(thisVector);
 	cout << "Input element to find: \n";
 	cin >> el;
 

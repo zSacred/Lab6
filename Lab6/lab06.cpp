@@ -19,24 +19,32 @@ int main()
 	//DoTask4();
 	//DoTask5();
 	//DoTask6();
-
+	DoTask7();
 
 	system("pause");
 
     return 0;
 }
 
-void printVector(const vector<int>& m)
+void PrintVector(const vector<int>& m)
 {
 	for (const auto& e : m)
 		cout << e << ", ";
 	cout << endl;
 }
 
-void printVector(const vector<string>& m)
+void PrintVector(const vector<string>& m)
 {
 	for (const auto& e : m)
 		cout << e << ", ";
 	
+	cout << endl;
+}
+
+void PrintList(const list<int>& m)
+{
+	for (const auto& e : m)
+		cout << e << ", ";
+
 	cout << endl;
 }
