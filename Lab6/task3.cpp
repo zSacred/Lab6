@@ -4,8 +4,8 @@
 int wordsCounter(const string& str)
 {
 	int counter = 0;
-	int i;
 
+/*
 	if ((str[0] == ' ') || (str[0] == ',') || (str[0] == '.'))
 		i = 1;
 	else
@@ -24,8 +24,29 @@ int wordsCounter(const string& str)
 		if( (str[i] == ' ') || (str[i] == '.') || (str[i] == ','))
 			counter++;
 	}
+	*/
+	string thisStr = str;
+
+	char temp[4] = ",. ";
+
+	int pos = 0;
+
+	while (thisStr.size() > 0)
+	{
+		pos = thisStr.find_first_not_of(temp, 0);
+
+		thisStr.erase(0, pos); //убрали мусор в начале строки
+
+		pos = thisStr.find_first_of(temp, 0); //нашли конец слова
+
+		//string word = thisStr.substr(0, pos);
+		counter++; //посчитали слово
+
+		//cout << "got word : " << word << endl;
+
+		thisStr.erase(0, pos); //убрали слово из строки
+	}
 	
-	counter++;
 
 	return counter;
 }
