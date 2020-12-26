@@ -23,7 +23,7 @@ int WordsCounter(const string& str)
 		string word = thisStr.substr(0, pos);
 		counter++; //посчитали слово
 
-		cout << "got word : " << word << endl;
+		//cout << "got word : " << word << endl;
 
 		thisStr.erase(0, pos); //убрали слово из строки
 	}

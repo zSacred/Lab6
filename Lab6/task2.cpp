@@ -30,7 +30,7 @@ void DoTask2()
 	vector<int> thisVector = { 1, 2, 3, 5, 10, 15, 17 };
 	int el;
 
-	cout << "Task1.....\n";
+	cout << "Task2.....\n";
 	cout << "Have vector: \n";
 	PrintVector(thisVector);
 	cout << "Input element to find: \n";

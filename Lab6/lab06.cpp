@@ -11,20 +11,41 @@ using namespace std;
 
 int main()
 {
-	
-
-	//DoTask1();
-	//DoTask2();
-	//DoTask3();
-	//DoTask4();
-	//DoTask5();
-	//DoTask6();
-	//DoTask7();
-	//DoTask8();
-	DoTask9();
-
+	DoTask1();
 	system("pause");
+	system("cls");
 
+	DoTask2();
+	system("pause");
+	system("cls");
+
+	DoTask3();
+	system("pause");
+	system("cls");
+
+	DoTask4();
+	system("pause");
+	system("cls");
+
+	DoTask5();
+	system("pause");
+	system("cls");
+
+	DoTask6();
+	system("pause");
+	system("cls");
+
+	DoTask7();
+	system("pause");
+	system("cls");
+	
+	DoTask8();
+	system("pause");
+	system("cls");
+
+	DoTask9();
+	system("pause");
+	system("cls");
     return 0;
 }
 
