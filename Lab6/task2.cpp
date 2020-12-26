@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "lab.h"
 
-vector<int>::iterator findInSorted(vector<int>::iterator first, vector<int>::iterator last, int el)
+vector<int>::iterator FindInSorted(vector<int>::iterator first, vector<int>::iterator last, int el)
 {
 	//vector<int>::iterator search;
 	if (first == last)
@@ -13,9 +13,9 @@ vector<int>::iterator findInSorted(vector<int>::iterator first, vector<int>::ite
 		return middle;
 
 	if (*middle < el && middle + 1 != last)
-		return findInSorted(middle, last, el);
+		return FindInSorted(middle, last, el);
 	if (*middle > el)
-		return findInSorted(first, middle, el);
+		return FindInSorted(first, middle, el);
 	
 	
 	return last;
@@ -38,7 +38,7 @@ void DoTask2()
 	
 	
 	cout << "Finding element...\n";
-	vector<int>::iterator iterator = findInSorted(thisVector.begin() , thisVector.end(), el);
+	vector<int>::iterator iterator = FindInSorted(thisVector.begin() , thisVector.end(), el);
 	if (iterator != thisVector.end())
 		cout << "Found element: " << *iterator << endl;
 	else

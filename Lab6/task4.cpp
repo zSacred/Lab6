@@ -2,7 +2,7 @@
 #include "lab.h"
 
 
-map<string, int> wordsMapCounter(const string& str)
+map<string, int> WordsMapCounter(const string& str)
 {
 	string thisStr = str;
 
@@ -72,7 +72,7 @@ void DoTask4()
 		<< str
 		<< endl;
 
-	words = wordsMapCounter(str);
+	words = WordsMapCounter(str);
 	PrintMap(words);
 
 	return;
