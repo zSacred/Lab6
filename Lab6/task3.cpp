@@ -18,7 +18,7 @@ int wordsCounter(const string& str)
 			continue;
 		if ((str[i] == '.') && ((str[i + 1] == ' ') || (str[i + 1] == ',') || (str[i + 1] == '.')))
 			continue;
-		if ((str[i] == ',') && ((str[i + 1] == ' ') || (str[i + 1] == ',') || (str[i + 1] == ',')))
+		if ((str[i] == ',') && ((str[i + 1] == ' ') || (str[i + 1] == ',') || (str[i + 1] == '.')))
 			continue;
 		
 		if( (str[i] == ' ') || (str[i] == '.') || (str[i] == ','))
@@ -41,5 +41,5 @@ void DoTask3()
 		<< str
 		<< endl;
 
-	cout << "There is " << wordsCounter(str) << " of words in this sentence";
+	cout << "There is " << wordsCounter(str) << " of words in this sentence\n";
 }
