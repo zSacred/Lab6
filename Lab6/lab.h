@@ -12,19 +12,22 @@ void DoTask2();
 void DoTask3();
 void DoTask4();
 void DoTask5();
+void DoTask6();
 
 void printVector(const vector<int>& m);
 void printVector(const vector<string>& m);
 
-//Lab1
+//Task1
 vector<int>::iterator Find(vector<int>::iterator first, vector<int>::iterator last, int el);
-//Lab2
+//Task2
 vector<int>::iterator FindInSorted(vector<int>::iterator first, vector<int>::iterator last, int el);
-//Lab3
+//Task3
 int WordsCounter(const string& str);
-//Lab4
+//Task4
 map<string, int> WordsMapCounter(const string& str);
 void InsertWord(map<string, int>& wordMap, string word);
 void PrintMap(map<string, int> wordMap);
-//Lab5
-vector<string> UniqueWords(const std::string& str);
+//Task5
+vector<string> UniqueWords(const string& str);
+//Task6
+int UniqueWordsCount(const string& str);
