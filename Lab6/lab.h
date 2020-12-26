@@ -15,6 +15,7 @@ void DoTask4();
 void DoTask5();
 void DoTask6();
 void DoTask7();
+void DoTask8();
 
 void PrintVector(const vector<int>& m);
 void PrintVector(const vector<string>& m);
@@ -36,3 +37,6 @@ vector<string> UniqueWords(const string& str);
 int UniqueWordsCount(const string& str);
 //Task7
 void ReverseNums(list<int>& nums);
+//Task8
+void PlusesDelete(vector<int>& nums);
+bool IsPlus(const int& element);
