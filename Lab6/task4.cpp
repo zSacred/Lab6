@@ -15,7 +15,8 @@ map<string, int> wordsMapCounter(const string& str)
 	while (thisStr.size() > 0)
 	{
 		pos = thisStr.find_first_not_of(temp, 0);
-
+		if (pos == -1)
+			break;
 		thisStr.erase(0, pos); //убрали мусор в начале строки
 
 		pos = thisStr.find_first_of(temp, 0); //нашли конец слова
@@ -62,7 +63,8 @@ void DoTask4()
 	map<string, int> words;
 
 	//string str(".This is,testing sample,of.string"); //6 words
-	string str(".This  is.,testing sample,,,of. string"); //6 words
+	//string str(".This  is.,testing sample,,,of. string"); //6 words
+	string str(".This  is.,testing sample,,,of. string...yep,yep  it.is..,,."); //10 words
 	cout << "Task 4"
 		<< endl
 		<< "Testing sentence: "
