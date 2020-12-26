@@ -35,7 +35,7 @@ void PrintMap(map<string, int> wordMap);
 //Task5
 vector<string> UniqueWords(const string& str);
 //Task6
-int UniqueWordsCount(const string& str);
+int DiffWordsCount(const string& str);
 //Task7
 void ReverseNums(list<int>& nums);
 //Task8

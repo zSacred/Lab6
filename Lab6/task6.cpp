@@ -2,7 +2,7 @@
 #include "lab.h"
 
 
-int UniqueWordsCount(const string& str)
+int DiffWordsCount(const string& str)
 {
 	int counter;
 
@@ -51,7 +51,7 @@ void DoTask6()
 		<< str
 		<< endl;
 
-	int uniqueWordsCounter = UniqueWordsCount(str);
+	int uniqueWordsCounter = DiffWordsCount(str);
 	cout << "Unique words count: " << uniqueWordsCounter << endl;
 	return;
 }
