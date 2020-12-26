@@ -4,13 +4,17 @@
 #include <vector>
 #include <string>
 #include <map>
+#include <set>
 
 using namespace std;
 void DoTask1();
 void DoTask2();
 void DoTask3();
 void DoTask4();
+void DoTask5();
+
 void printVector(const vector<int>& m);
+void printVector(const vector<string>& m);
 
 //Lab1
 vector<int>::iterator Find(vector<int>::iterator first, vector<int>::iterator last, int el);
